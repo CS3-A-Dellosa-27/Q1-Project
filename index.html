@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="VALORANT (Cs3 Quarter 1 Project)" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="AM Dellosa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="audio-container">
+            <audio loop id="audio" preload="auto">
+                <source src="content/backgroundMusic.mp3" type="audio/mpeg">
+            </audio>
+        
+        </div>
+        <video class="backgroundVideo" width="2500" height="1406" autoplay loop muted controls disablePictureInPicture controlsList="nodownload">
+             <source src="content/backgroundVid.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <ul>
+                <li class="navButton" id="nb5">
+                    <a href="credits.html" style="color: white;">Credits</a>
+                </li>
+                <li class="navButton" id="nb2">
+                    <a href="about.html" style="color: white;">About</a>
+                </li>
+                <li class="navButton" id="nb1">
+                    <a href="javascript:location.reload(true)" style="color: #ff4454;">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="logo" src="content/Radiant_Rank.png" alt="">
+        <h1 class="title">RIOT GAMES</h1> 
+        <div class="mainText">
+            <h1 class="gameName">VALORANT</h1> 
+            <a href="about.html" id="about-link" style="color: white;" class="gameInfo">
+                <button class="gameInfo2" id="redirectButton">
+                Game Info
+                </button>
+            </a>
+       </div>
+        <div>
+            <h6 class="copyright">*This parody version of Riot Games' VALORANT website was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.</h6>
+        </div>    
+    </body>
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/e7322a6673613ab13604fadda3d20e56?family=VALORANT);
+        @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+        @import url(https://db.onlinewebfonts.com/c/89d26504567ac6dbff4910a1bb5b8ba7?family=FSP+DEMO+-+Anguita+Sans+Black);
+        @font-face {
+            font-family: "VALORANT";
+            src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot");
+            src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.svg#VALORANT")format("svg");
+        }
+        @font-face {
+            font-family: "Circular Std Book";
+            src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
+            src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")format("svg");
+        }
+        @font-face {
+            font-family: "FSP DEMO - Anguita Sans Black";
+            src: url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.eot");
+            src: url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.svg#FSP DEMO - Anguita Sans Black")format("svg");
+        }
+        *{
+            margin: 0;
+            overflow: hidden;
+        }
+        .navButton{
+            font-family: "FSP DEMO - Anguita Sans Black";
+            position: relative;
+            list-style-type:none;
+            float: right;
+            margin: 30px 25px 10px 25px;
+            border-right: none;
+            font-size: 30px;
+            color:white;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .navButton:hover{
+            transform: scale(1.2);
+        }
+        .logo{
+            position: fixed;
+            height: 80px;
+            z-index: 2;
+            margin: 5px;
+        }
+        nav{
+            width: 100%;
+            position: fixed;
+            height: 96px;
+            background: #181414;
+            z-index: 1;
+        }
+        .title{
+            font-family: "Circular Std Book";
+            z-index: 2;
+            color: white;
+            font-size: 50px;
+            position: fixed;
+            margin: 17px 10px 10px 10px;
+            left: 90px;
+            cursor: default;
+        }
+        .copyright{
+            font-family: "Circular Std Book";
+            z-index: 2;
+            color: white;
+            font-size: 15px;
+            position: fixed;
+            margin: 15px 10px 10px 10px;
+            left: 5px;
+            bottom: 10px;
+            font-style: italic;
+            width: 60%;
+        }
+        .backgroundVideo{
+            position: fixed;
+            overflow: hidden;
+            float: right;
+            z-index: -1;
+            display: block;
+            bottom: -35%;
+        }
+        .mainText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            height: 100vh;
+        }
+        .gameName{
+            font-family: "VALORANT";
+            z-index: 2;
+            color: white;
+            font-size: 100px;
+            transition: transform 0.2s;
+            cursor: default;
+        }
+        .gameName:hover{
+            transform: scale(1.2);
+        }
+        .gameInfo{
+            font-family: "FSP DEMO - Anguita Sans Black";
+            display: inline-block;
+            z-index: 2;
+            color: white;
+            font-size: 30px;
+            padding: 20px 80px 20px 80px;
+            background-color: #ff4454;
+            border: 4px #53212B solid;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            transform-origin: center;
+            text-decoration: underline;
+        }
+        .gameInfo2{
+            color: white;
+            font-size: 30px;
+            font-family: "FSP DEMO - Anguita Sans Black";
+            z-index: 2;
+            background-color: #ff4454;
+            border: none;
+            cursor: pointer;
+        }
+        .gameInfo:hover{
+            transform: scale(1.1);
+        }
+    </style>
+    <script src="audio.js"></script>
+    <script>
+        
+        let isFirstMouseUp = true;
+        document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("audio");
+        function playAudio() {
+            if (isFirstMouseUp) {
+                audio.play();
+                isFirstMouseUp = false;
+            }
+        }
+
+        document.addEventListener("mousemove", playAudio);
+        });
+    </script>
+</html>

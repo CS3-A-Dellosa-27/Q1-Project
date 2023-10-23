@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="VALORANT (Cs3 Quarter 1 Project)" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="AM Dellosa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <img id="image-to-duplicate" src="content/jettChibi.png" alt="">
+        <div class="jettclick">
+            <img src="content/jett.png" alt="" class="jettChar" id="playButton">
+            <audio id="audioPlayer" controls style="display: none;"></audio>
+            <br>
+            <br>
+            <button class="clickChar" id="buttonChar">Click the image!</button>
+        </div>
+        <div id="audio-container">
+            <audio loop id="audio" preload="auto">
+                <source src="content/backgroundMusic.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <video class="backgroundVideo" width="2500" height="1406" autoplay loop muted controls disablePictureInPicture controlsList="nodownload">
+            <source src="content/backgroundVid.mp4" type="video/mp4">
+        </video>
+        <nav>
+           <ul>
+                <li class="navButton" id="nb5">
+                    <a href="credits.html" style="color: white;">Credits</a>
+                </li>
+                <li class="navButton" id="nb2">
+                    <a class="aboutButton" href="javascript:location.reload(true)" style="color: #ff4454;">About</a>
+                </li>
+                <li class="navButton" id="nb1">
+                    <a href="index.html" id="about-link" style="color: white;">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="logo" src="content/Radiant_Rank.png" alt="">
+        <h1 class="title">RIOT GAMES</h1> 
+        <div>
+            <h6 class="copyright">*This parody version of Riot Games' VALORANT website was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.</h6>
+        </div>
+        <div>
+            <div class="mainContent">
+                <div class="heading">
+                    <div class="container">
+                        <div class="row">
+                            <div class="idk">
+                                <span class="head">THIS IS</span>
+                                <h3 class="animate-character"> VALORANT</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <span style="font-style: italic;">Valorant </span> is an action packed multiplayer first person shooter that brings together shooting, tactical cooperation and distinctive character skills. Having multiple maps to play from, players will never get bored. It also involves two teams of five players each with one team attacking while the other defends.
+                <br>
+                <br>
+                With its own built-in voice chat feature, Valorant players will be able to communicate with each other. Bringing a level of coordination and teamwork  to the game that is essential for success. Clear and effective communication is key, whether you're planning a well-timed attack, sharing information about enemy positions, or coordinating abilities with your teammates.
+            </div>
+        </div>
+    </body>
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/e7322a6673613ab13604fadda3d20e56?family=VALORANT);
+        @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+        @import url(https://db.onlinewebfonts.com/c/89d26504567ac6dbff4910a1bb5b8ba7?family=FSP+DEMO+-+Anguita+Sans+Black);
+        @import url(https://db.onlinewebfonts.com/c/09ac81b561d9a4e2834c7bb4c669cb85?family=Co+Headline+W01+Regular);
+        @import url(https://db.onlinewebfonts.com/c/28d2e6758b7919e18e76b015bbda74cb?family=QuiettheThief-EmptyBold);
+        @import url(https://db.onlinewebfonts.com/c/7cc8cbbd7a330c0d1e7c08c6d62711e4?family=League+Spartan+Regular);
+        @font-face {
+            font-family: "VALORANT";
+            src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot");
+            src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.svg#VALORANT")format("svg");
+        }
+        @font-face {
+            font-family: "Circular Std Book";
+            src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
+            src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")format("svg");
+        }
+        @font-face {
+            font-family: "FSP DEMO - Anguita Sans Black";
+            src: url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.eot");
+            src: url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/89d26504567ac6dbff4910a1bb5b8ba7.svg#FSP DEMO - Anguita Sans Black")format("svg");
+        }
+        @font-face {
+            font-family: "Co Headline W01 Regular";
+            src: url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.eot");
+            src: url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/09ac81b561d9a4e2834c7bb4c669cb85.svg#Co Headline W01 Regular")format("svg");
+        }
+        @font-face {
+            font-family: "QuiettheThief-EmptyBold";
+            src: url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.eot");
+            src: url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/28d2e6758b7919e18e76b015bbda74cb.svg#QuiettheThief-EmptyBold")format("svg");
+        }
+        @font-face {
+            font-family: "League Spartan Regular";
+            src: url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.eot");
+            src: url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/7cc8cbbd7a330c0d1e7c08c6d62711e4.svg#League Spartan Regular")format("svg");
+        }
+        *{
+            margin: 0;
+            overflow: hidden;
+        }
+        .backgroundVideo{
+            position: fixed;
+            overflow: hidden;
+            float: right;
+            z-index: -1;
+            display: block;
+            bottom: -35%;
+        }
+        .navButton{
+            font-family: "FSP DEMO - Anguita Sans Black";
+            position: relative;
+            list-style-type:none;
+            float: right;
+            margin: 30px 25px 10px 25px;
+            border-right: none;
+            font-size: 30px;
+            color:white;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .navButton:hover{
+            transform: scale(1.2);
+        }
+        .logo{
+            position: fixed;
+            height: 80px;
+            z-index: 2;
+            margin: 5px;
+        }
+        nav{
+            width: 100%;
+            position: fixed;
+            height: 96px;
+            background: #181414;
+            z-index: 1;
+        }
+        .title{
+            font-family: "Circular Std Book";
+            z-index: 2;
+            color: white;
+            font-size: 50px;
+            position: fixed;
+            margin: 17px 10px 10px 10px;
+            left: 90px;
+            cursor: default;
+        }
+        .copyright{
+            font-family: "Circular Std Book";
+            z-index: 2;
+            color: white;
+            font-size: 15px;
+            position: fixed;
+            margin: 15px 10px 10px 10px;
+            left: 5px;
+            bottom: 10px;
+            font-style: italic;
+            width: 60%;
+        }
+        .heading{
+            width: 50%;
+            font-family: "League Spartan Regular";
+            letter-spacing: 5px;
+            font-size: 50px;
+            position: fixed;
+            top: 18%;
+            color: white;
+            left: 4%;
+            padding: 10px;
+            border-bottom: 10px black solid;
+            word-spacing: 10px;
+            cursor: default;
+        }
+        .head2{
+            font-style: italic;
+            color: #ff4454;
+        }
+        .animate-character {
+            position: absolute;      
+            text-transform: uppercase;
+            background-image: linear-gradient(
+                -225deg,
+              #FD4556 0%,
+              #b84852 29%,
+              #BD3944 67%,
+              #FD4556 100%
+            );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            margin-top: -0.75%;
+            margin-left: 4%;
+            transition: transform 0.2s;
+            }
+            .animate-character:hover{
+                transform: scale(1.05);
+            }
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+        .text{
+            position: fixed;
+            font-family: "Co Headline W01 Regular";
+            display: inline-block;
+            z-index: 2;
+            color: white;
+            font-size: clamp(20px, 50%, 40px);
+            width: clamp(500px, 50%, 1000px);
+            height: 110%;
+            text-align: justify;
+            left: 5%;
+            top: 34%;
+        }
+        .jettclick{
+            z-index: 10;
+            position: fixed;
+            left: 70%;
+            top: 17%;
+            overflow: hidden;
+        }
+        .jettChar{
+            transition: transform 0.2s;
+            width: 300px;
+            cursor: pointer;
+        }
+        .jettChar:hover{
+            transform: scale(1.05);
+        }
+        .clickChar{
+            position: fixed;
+            font-family: "League Spartan Regular";
+            display: inline-block;
+            z-index: 2;
+            color: white;
+            font-size: 20px;
+            padding: 20px 80px 20px 80px;
+            background-color: #ff4454;
+            border: 4px #53212B solid;
+            border-radius: 100px;
+            opacity: 1;
+            transition: opacity 1s;
+            left: 69.2%;
+        }
+        .mainContent{
+            margin-left: 3%;
+            margin-right: 10px;
+            margin-top: 8%;
+            overflow: auto;
+            border: 3px solid black;
+            background-color: #424141;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            height: 70vh;
+            width: 115vh;
+            font-family: "Eina03-SemiBold";
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+        .falling-image {
+            position: absolute;
+            animation: fall 5s linear;
+        }
+        #image-to-duplicate {
+            display: none;
+        }
+        .falling-image {
+            position: absolute;
+            z-index: 10;
+            animation: fall 5s linear;
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(0) rotate(0deg);
+            }
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        const buttonImage = document.getElementById("playButton");
+
+        buttonImage.addEventListener("click", function () {
+            const duplicateImage = document.createElement("img");
+            duplicateImage.src = "content/jettChibi.png"; 
+            duplicateImage.className = "falling-image";
+
+            duplicateImage.style.left = `${Math.random() * window.innerWidth}px`;
+            duplicateImage.style.top = '0';
+
+            const randomRotation = Math.random() * 360;
+            const randomTransform = `translateY(0) rotate(${randomRotation}deg)`;
+            duplicateImage.style.transform = randomTransform;
+
+            document.body.appendChild(duplicateImage);
+
+            duplicateImage.addEventListener("animationend", function () {
+                document.body.removeChild(duplicateImage);
+            });
+        });
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        const mp3List = [
+            'content/1.mp3',
+            'content/2.mp3',
+            'content/3.mp3',
+            'content/4.mp3',
+            'content/5.mp3',
+            'content/6.mp3',
+            'content/7.mp3',
+            'content/8.mp3',
+            'content/9.mp3',
+            'content/10.mp3',
+        ];
+
+        playButton.addEventListener('click', playRandomMP3);
+
+        function playRandomMP3() {
+            const randomIndex = Math.floor(Math.random() * mp3List.length);
+            const randomMP3 = mp3List[randomIndex];
+            audioPlayer.src = randomMP3;
+            audioPlayer.play();
+        }
+
+        audioPlayer.addEventListener('ended', () => {
+            audioPlayer.src = '';
+        }); 
+        const image = document.getElementById('buttonChar');
+        function toggleVisibility() {
+            if (image.style.opacity === '1') {
+                image.style.opacity = '0';
+            } else {
+            image.style.opacity = '1'; 
+            }
+        }
+        setInterval(toggleVisibility, 1000);
+    </script>
+    <script src="audio.js"></script>
+</html>
