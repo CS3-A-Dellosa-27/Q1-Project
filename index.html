@@ -187,18 +187,13 @@
     </style>
     <script src="audio.js"></script>
     <script>
-        
+        const audio = document.getElementById("audio");
         let isFirstMouseUp = true;
-        document.addEventListener("DOMContentLoaded", function () {
-        var audio = document.getElementById("audio");
-        function playAudio() {
-            if (isFirstMouseUp) {
-                audio.play();
-                isFirstMouseUp = false;
-            }
-        }
-
-        document.addEventListener("mousemove", playAudio);
+        window.addEventListener("load", function () {
+          if (isFirstMouseUp) {
+            audio.play();
+            isFirstMouseUp = false;
+          }
         });
     </script>
 </html>
